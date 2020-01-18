@@ -2,5 +2,20 @@
   %body
   .chat_main
     .chat_main_group_info
+      .main-header__left-box 
+        .team-name
+          test
+        .team-member
+          member:masa
+      .edit-main
+        = link_to "#" do
+          Edit
     .chat_main_message_list
-    .chat_mein_message_form
+    .chat_main_message_form
+      .new-message
+        .input-box
+          .input-img
+            = link_to "" do
+              = icon("fa","image")
+        .submit-btn
+          Send
