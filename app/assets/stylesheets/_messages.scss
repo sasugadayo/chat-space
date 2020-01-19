@@ -7,7 +7,7 @@
 .side-bar {
   height: 100vh;
   width: 300px;
-  .side-bar__box {
+  &__box {
     background-color: #253141;
     height: 100px;
     display: flex;
@@ -15,23 +15,23 @@
     justify-content: space-between;
     padding: 0px 20px;
     width: 300px;
-    .side-bar__box__user-name {
+    &__user-name {
       color: #ffffff;
       font-weight: bold;
       font-size: 16px;
       height: 20px;
     }
-    .side-bar__box-menu {
+    &__menu {
       width: 60px;
       height: 20px;
       display: flex;
       justify-content: flex-end;
-      .side-bar__box-menu__new-group {
+      &__new-group {
         a {
           color: white;
         }
       }
-      .side-bar__box-menu__edit-user{
+      &__edit-user{
         margin-left: 5px;
         a {
           color: white;
@@ -39,16 +39,18 @@
       }
     }
   }
-  .side-bar__group-list{
+
+
+  &__group-list{
     background-color: #2F3E51;
     height: calc(100vh - 100px);
-    .side-bar__group-list__techcamp {
+    &__techcamp {
       font-size: 15px;
       padding: 20px 0px 0px 20px;
       color: #ffffff;
       font-weight: bold;
     }
-    .side-bar__group-list__message {
+    &__message {
       font-size: 11px;
       padding: 5px 0px 40px 20px;
       color: #ffffff;
@@ -57,10 +59,11 @@
   }
 }
 
+
 .chat_main {
   height: 100vh;
   width: calc(100vw - 300px);
-  .chat_main_group_info {
+  &__group_info {
     background-color: #ffffff;
     height: 100px;
     border-bottom: solid 1px #eeeeee;
@@ -68,13 +71,13 @@
     justify-content: space-between;
     padding: 0px 40px;
     .main-header__left-box  {
-      .team-name {
+      &__team-name {
         color: #333333;
         font-size: 20px;
         padding-top: 35px;
         padding-bottom: 15px;
       }
-      .team-member {
+      &__team-member {
         color: #999999;
         font-size: 12px;
       }
@@ -110,21 +113,38 @@
     .new-message {
       display: flex;
       justify-content: space-between;
+      width: 100%;
+
       .input-box {
         display: flex;
         background-color: white;
-        box-sizing: border-box;
-        .input-box__text {
-        padding-left: 10px;
-        padding-right: 40px;
+        width: 100%;
+        position: relative;
+        &__text {
+          height: 50px;
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 40px;
+          color: #434a54;
         }
-        .input-img {
+        &__img {
+          cursor: pointer;
+          font-size: 1.3em;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+            a {
+              color: black;
+            }
+          &__file {
+            display: none;
+          }
         }
       }
-      
       .submit-btn {
-        height: 100px;
-        width: 50px;
+        height: 50px;
+        width: 100px;
+        line-height: 50px;
         background-color: #38aef0;
         color: white;
         padding: 0px 30px;
