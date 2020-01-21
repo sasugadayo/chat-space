@@ -40,9 +40,12 @@
     }
   }
 
-  &__group-list{
+  &__groups-list{
     background-color: #2F3E51;
     height: calc(100vh - 100px);
+    a {
+      text-decoration: none;
+    }
     &__techcamp {
       font-size: 15px;
       padding: 20px 0px 0px 20px;
