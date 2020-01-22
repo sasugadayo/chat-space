@@ -7,13 +7,13 @@
         = link_to new_group_path, class:"side-bar__box__menu__new-group__icon" do
           = icon('fas', 'edit')
       .side-bar__box__menu__edit-user
-        = link_to edit_user_path(current_user.id) do
-          = icon('fas','cog')
+        = link_to edit_user_path(current_user.id), class:"side-bar__box__menu__edit-user" do
+          = icon('fas', 'cog')
   .side-bar__groups-list
     - current_user.groups.each do |group|
       .group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .side-bar__groups-list__techcamp
             = group.name
           .side-bar__groups-list__message
-            メッセージはまだありません。
+            = group.show_last_message
