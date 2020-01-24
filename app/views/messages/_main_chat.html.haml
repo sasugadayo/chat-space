@@ -11,7 +11,10 @@
       .edit-main
         = link_to edit_group_path(current_user.id)  do
           Edit
-    .chat_main_message_list
+    .chat_main__message
+      .chat_main__message__list
+      = render @messages
+  
     .form
       = form_for [@group, @message] do |f|
         .input-box
