@@ -98,9 +98,33 @@
         }
     }
   }
-  .chat_main_message_list {
-    background-color:#fafafa;
+
+  &__message{
     height: calc(100vh - 190px);
+    overflow: scroll;
+    background-color:#fafafa;
+
+    &__list__message {
+      background-color:#fafafa;
+      &__upper-message{
+      background-color:#fafafa;
+      display: flex;
+      padding-top: 35px;
+      margin-bottom: 12px;
+      margin-left: 40px;
+      height: 50px;
+      &__user-name{
+        color: #333333;
+        font-size: 16px;
+      }
+      &__date{
+        color: #999999;
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 5px;
+      }
+    }
+  }
   }
 
   .form {
@@ -153,4 +177,12 @@
       }
     }
   }
+}
+
+
+
+.lower-message{
+  font-size: 14px;
+  color: #434a54;
+  margin-left: 40px;
 }
