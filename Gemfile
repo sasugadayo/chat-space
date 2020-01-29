@@ -74,4 +74,4 @@ gem 'mini_magick'
 gem 'jquery-rails'
 gem 'pry-rails'
 gem 'pry-byebug'
-
+gem 'fog-aws'
