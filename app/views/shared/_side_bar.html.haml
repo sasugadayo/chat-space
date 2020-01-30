@@ -1,7 +1,7 @@
 .side-bar
   .side-bar__box
     .side-bar__box__user-name
-      masa
+      = current_user.name
     .side-bar__box__menu
       .side-bar__box__menu__new-group
         = link_to new_group_path, class:"side-bar__box__menu__new-group__icon" do

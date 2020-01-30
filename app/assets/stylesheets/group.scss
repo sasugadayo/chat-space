@@ -51,6 +51,18 @@ li {
     line-height: 30px;
     padding: 10px 15px;
     box-sizing: border-box;
+    p {
+      display: block;
+      box-sizing: border-box;
+      position: relative;
+      a {
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+    }
   }
   &__action-btn {
     display: inline-block;
