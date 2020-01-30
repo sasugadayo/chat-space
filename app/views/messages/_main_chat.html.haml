@@ -9,7 +9,7 @@
           - @group.users.each do |user|
             = user.name
       .edit-main
-        = link_to edit_group_path(current_user.id)  do
+        = link_to edit_group_path(@group) do
           Edit
     .chat_main__message
       .chat_main__message__list
